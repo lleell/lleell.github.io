@@ -371,8 +371,11 @@ img {
 .page2 .con .content li .night {
   width: 2.5rem; }
 
-.page2 .con .content li div {
+.page2 .con .content li.msgleft div {
   float: left; }
+
+.page2 .con .content li.msgright div {
+  float: right; }
 
 .page2 .con .content li .photo {
   width: 1.55rem;
@@ -387,12 +390,16 @@ img {
 .page2 .con .content li .mix {
   background: url("../images/mix.png"); }
 
-.page2 .con .content li .username {
+.page2 .con .content li.msgleft .username {
   padding: 0 0 0 0.5rem;
   font-size: 0.45rem;
   color: #888; }
-
-.page2 .con .content li .mess {
+.page2 .con .content li.msgright .username {
+  padding: 0 0.5rem 0 0;
+  font-size: 0.45rem;
+  color: #888; 
+  text-align: right;}
+.page2 .con .content li.msgleft .mess {
   max-width: 10.375rem;
   line-height: 0.8rem;
   margin: 0.125rem 0 0 0.45rem;
@@ -402,8 +409,18 @@ img {
   position: relative;
   background: #fff;
   font-size: 0.65rem; }
-
-.page2 .con .content li .mess:before {
+.page2 .con .content li.msgright .mess {
+  max-width: 10.375rem;
+  line-height: 0.8rem;
+  margin: 0.125rem 0.45rem 0 0;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.125rem;
+  position: relative;
+  right: 0;
+  background: #fff;
+  font-size: 0.65rem; }
+.page2 .con .content li.msgleft .mess:before {
   content: ' ';
   width: 0.45rem;
   height: 0.45rem;
@@ -416,7 +433,19 @@ img {
   background: #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
-
+.page2 .con .content li.msgright .mess:before {
+  content: ' ';
+  width: 0.45rem;
+  height: 0.45rem;
+  position: absolute;
+  right: -0.25rem;
+  top: 0.375rem;
+  border: 1px solid #d1d1d1;
+  border-bottom: none;
+  border-left: none;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
 .page2 .con .content li .image {
   max-width: 10.375rem;
   margin: 0.125rem 0 0 0.45rem;

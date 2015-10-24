@@ -156,11 +156,11 @@ $(function(){
         var totalHeight = 0,
             maxHigh = (GC.h / 1039) * 962,
             scrollTotop = 0;
-        for( var j = 0 ; j < 3; j++ ){
+        for( var j = 0 ; j < 5; j++ ){
             totalHeight += li.eq(j).height();
         }
 
-        for( var i = 2; i < li.length;i++ ){
+        for( var i = 4; i < li.length;i++ ){
             (function(ind){
                 setTimeout(function(){
                     li.eq(ind+1).addClass('liStart').removeClass('hidden');//.addClass('liAnimate');
@@ -176,7 +176,7 @@ $(function(){
                         },(ind == 1) ? 0 : 350);
 
                     }
-                    if( ind <= 2){
+                    if( ind <= 4){
                         return;
                     }else{
                         li.eq(ind).removeClass('liStart').addClass('liAnimate');  // 每条消息出现的动画时间为 0.3s
@@ -185,7 +185,7 @@ $(function(){
                         //setTimeout(showPage3,2500);   // 等待1650ms ，显示下一个页面
                         //------------------------------
                         //李磊改
-                        setTimeout("alert('over')", 5000);
+                        //setTimeout("alert('over')", 5000);
                     }
                     //if( $('.tips')[0].readyState == 4 ){
                         $('.tips')[0].currentTime = 0;

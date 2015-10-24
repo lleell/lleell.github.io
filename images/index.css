@@ -341,7 +341,7 @@ img {
   top: 0; }
 
 .page2 .con .content li {
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   margin-top: 0; }
 
 .page2 .con .content .liStart {
@@ -467,7 +467,7 @@ img {
   border-right: none;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #000; }
+  background: #fff; }
 
 .page2 .con .content li .image img {
   width: 10.375rem; }

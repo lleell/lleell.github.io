@@ -380,15 +380,20 @@ img {
 .page2 .con .content li .photo {
   width: 1.55rem;
   height: 1.55rem;
-  background: url("../images/Tony.png");
+  background: url("../images/ruishen.jpg");
   background-size: 100% 100%; }
 
 .page2 .con .content li .boss {
-  background: url("../images/boss.png");
+  width: 1.55rem;
+  height: 1.55rem;
+  background: url("../images/me.jpg");
   background-size: 100% 100%; }
 
 .page2 .con .content li .mix {
-  background: url("../images/mix.png"); }
+  width: 1.55rem;
+  height: 1.55rem;
+  background: url("../images/xuanshen.jpg"); 
+  background-size: 100% 100%; }
 
 .page2 .con .content li.msgleft .username {
   padding: 0 0 0 0.5rem;
